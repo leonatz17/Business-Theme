@@ -12,7 +12,23 @@ function my_theme_setup(){
         'primary' => 'Primary Menu'
     ]);
 
-    add_theme_support('post-thumbnail');
+    add_theme_support('post-thumbnails');
+//custom header
+    add_theme_support('custom-header' , [
+        "width" => 1920,
+        "height" => 1080,
+        "flex-width" => true,
+        "flex-height" => true
+    ]);
+
+    //custom logo
+
+    add_theme_support('custom-logo', [
+        "width" => 50,
+        "height" => 50,
+        "flex-height" => true,
+        "flex-width" => true
+    ]);
 }
 add_action('after_setup_theme', 'my_theme_setup');
 
