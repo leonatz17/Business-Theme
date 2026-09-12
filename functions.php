@@ -9,7 +9,10 @@ add_action('wp_enqueue_scripts', 'my_theme_assets');
 
 function my_theme_setup(){
     register_nav_menus([
-        'primary' => 'Primary Menu'
+        'primary' => 'Primary Menu',
+        'footer' => 'Footer Menu',
+        'order online' => 'Order online',
+        'rewards' => 'Rewards'
     ]);
 
     add_theme_support('post-thumbnails');
